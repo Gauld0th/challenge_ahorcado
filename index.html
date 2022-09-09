@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width", initial-scale=1.0>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Juego del ahorcado</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <div class="firstPage">
+            <button class="startButton">Iniciar juego</button>
+
+
+            <button class="addCustomWord">Agregar nueva palabra</button>
+
+        </div>
+
+        <div class="insertWords">
+            <textarea>Ingrese texto aqui</textarea>
+            <button>Guardar y empezar</button>
+            <button>Cancelar</button>
+            
+        </div>
+
+        <div class="gamePage">
+            <div>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="usedWords">
+                <textarea></textarea>
+            </div>
+            <div class="secretWord">
+
+            </div>
+            
+            <button>Nuevo juego</button>
+            <button>Desistir</button>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+
+    <footer class="footer">
+        
+        <p>Creado por Mauro Bellizzi</p>
+
+    </footer>
+</html>
