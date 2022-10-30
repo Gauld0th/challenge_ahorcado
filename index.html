@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Juego del ahorcado</title>
 
-        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         
     </head>
@@ -23,25 +22,28 @@
         </div>
 
         <div class="insertWords">
-            <textarea>Ingrese texto aqui</textarea>
-            <button>Guardar y empezar</button>
-            <button>Cancelar</button>
-            
+            <div class="insertWordsVisible">
+                <textarea id="insertWord" placeholder="Ingrese texto aqui"></textarea>
+                <button id="saveAndStart">Guardar y empezar</button>
+                <button id="cancel">Cancelar</button>
+            </div>
         </div>
 
         <div class="gamePage">
             <div>
-                <canvas id="canvas"></canvas>
+                <canvas id="canvas"></canvas>   
             </div>
-            <div class="usedWords">
-                <textarea></textarea>
+            <div class="usedLetters">
+                
             </div>
             <div class="secretWord">
 
             </div>
             
-            <button>Nuevo juego</button>
-            <button>Desistir</button>
+            <p id="ganaste">Fin del Juego. Felicidades! Ganaste.</p>
+            <p id="perdiste">Fin del Juego. Perdiste! Intentalo de nuevo.</p>
+            <button class="newGame">Nuevo juego</button>
+            <button class="giveUp">Desistir</button>
 
         </div>
 
