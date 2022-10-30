@@ -152,6 +152,7 @@ function startGame(){
     wordContainer.innerHTML = "";
     usedLettersElement.innerHTML = "";
     firstPage.style.display = "none";
+    insertWords.style.display = "none";
     gamePage.style.display = "block";
     drawHangMan();
     selectRandomWord();
